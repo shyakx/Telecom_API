@@ -8,6 +8,8 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 import uvicorn
 import os
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1" 
+
 # Initialize FastAPI app
 app = FastAPI(
     title="Churn Prediction API (7 Features)",
